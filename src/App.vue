@@ -1,7 +1,6 @@
 <template>
   <top-header></top-header>
-
-  
+  <router-view></router-view> 
   <bottom-footer></bottom-footer>
   
 </template>
