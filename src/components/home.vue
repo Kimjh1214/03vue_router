@@ -1,6 +1,6 @@
 <template>
   <swiper :pagination="true" class="mySwiper mb-5">
-    <swiper-slide><img src="images/banner01.jpg" alt=""></swiper-slide>
+    <swiper-slide><img src="images/banner.jpg" alt=""></swiper-slide>
     <swiper-slide><img src="images/banner02.jpg" alt=""></swiper-slide>
     <swiper-slide><img src="images/banner03.jpg" alt=""></swiper-slide>
     <swiper-slide><img src="images/banner04.jpg" alt=""></swiper-slide>
