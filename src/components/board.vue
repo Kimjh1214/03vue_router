@@ -1,6 +1,6 @@
 <template>
   <div class="board">
-    <div class="container px-0">
+    <div class="container mb-5 px-0">
       <h2>board</h2>
       <p>게시판 입니다.</p>
       <table class="table">

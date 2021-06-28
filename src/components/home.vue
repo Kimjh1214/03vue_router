@@ -7,13 +7,16 @@
     <swiper-slide><img src="images/banner05.jpg" alt=""></swiper-slide>
   </swiper>
   <div class="best">
-    <div class="container mb-5">
+    <div class="container mb-5 px-0">
       <h2>BEST상품</h2>
       <p>MUSINSA BEST상품을 소개합니다.</p>
       <div class="row">
         <div class="col-sm-6 col-md-3" v-for="(item,i) in 4" :key="i">
           <img :src="pdata[i].image" alt="" class="w-100">
-          <div @click="$emit('pOpen',pdata[i].id)">{{pdata[i].title}}</div>
+          <div @click="$emit('pOpen',pdata[i].id)">
+            <p>{{pdata[i].title}}</p>
+            <p><b>{{pdata[i].price.toLocaleString()}}원</b></p>
+          </div>
         </div>
       </div>
       <div class="btn btn-primary d-block m-auto" style="width:100px">
@@ -51,6 +54,9 @@ export default {
 
 <style>
 .best h2 {text-align: center;}
+.mySwiper {height: 500px;}
+swiper-slide {height: 500px;}
+swiper-slide img {height: 500px;}
 .best h2:after {
   content:''; width: 30px; height: 1px; background: #333; display: block;
   margin: 20px auto;
